@@ -16,7 +16,7 @@ class DengLuTest(unittest.TestCase):
         self.driver.maximize_window()
 
     def tearDown(self):
-        #time.sleep(20)
+        time.sleep(20)
         self.driver.quit()
 
     def test_denglu(self):
