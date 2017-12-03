@@ -21,4 +21,5 @@ class ZhuCeTest(MyTestCase):
         time.sleep(3)
         actual = connDb()[1]
         self.assertEqual(expected, actual)
+        print(expected)
         print(connDb()[1])
