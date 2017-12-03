@@ -15,6 +15,7 @@ def connDb():
     # 那么就要把数据库所有记录倒序排列
     # 然后用fetchone()获取第一条记录，即数据库最新的记录
     result = curs.fetchone()
+    # conn.commit()     增加、删除、修改，只需要用commit就可以了
     # 如果想获取所有的查询结果，用fetchall()
     # result = curs.fetchall()
     return result
