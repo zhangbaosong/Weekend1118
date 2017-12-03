@@ -52,6 +52,7 @@ def send_mail(path):
     smtp.sendmail('bwftest126@126.com', '15032683126@163.com', msg.as_string())
     smtp.sendmail('bwftest126@126.com', '18401569214@163.com', msg.as_string())
     smtp.sendmail('bwftest126@126.com', '2410064039@qq.com', msg.as_string())
+    smtp.sendmail('bwftest126@126.com', 'bszhangf@isoftstone.com', msg.as_string())
 
 
     # 4.退出邮箱
@@ -67,6 +68,7 @@ if __name__ == '__main__':
     now = time.strftime("%Y-%m-%d_%H-%M-%S")
 
     suite = unittest.defaultTestLoader.discover("./day5", pattern="*Test.py")
+    # suite = unittest.defaultTestLoader.discover(".", pattern="*Test.py")
     # unittest.TextTestRunner() 文本测试用例运行器
     # 现在用html的测试用例运行器
     # html的测试用例运行器最终会生成一个html格式的测试报告
